@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayFullPower - Suplemento Proteico Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.7);
+            }
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 10px rgba(14, 165, 233, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(14, 165, 233, 0);
+            }
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">WAY<span class="text-yellow-300">FULL</span>POWER</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">O SUPLEMENTO PROTEICO QUE SEU CORPO MERECE</h2>
+                <p class="text-lg mb-8">Proteína de alta qualidade para maximizar seus ganhos musculares e recuperação pós-treino.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button id="purchase" class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-4 px-8 rounded-full text-lg pulse-animation transition duration-300">
+                        COMPRAR AGORA <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button class="bg-transparent hover:bg-blue-800 text-white font-semibold py-4 px-8 border border-white rounded-full text-lg transition duration-300">
+                        SAIBA MAIS
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="img.jpg" 
+                     alt="WayFullPower Protein" 
+                     class="rounded-lg shadow-2xl w-full max-w-md floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">POR QUE ESCOLHER WAYFULLPOWER?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="text-blue-600 mb-4 text-4xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ENERGIA POTENTE</h3>
+                    <p class="text-gray-600">Fornece energia sustentada para treinos intensos e recuperação acelerada.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="text-blue-600 mb-4 text-4xl">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">INGREDIENTES NATURAIS</h3>
+                    <p class="text-gray-600">Fórmula limpa sem aditivos artificiais, apenas o melhor para seu corpo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center">
+                    <div class="text-blue-600 mb-4 text-4xl">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">RESULTADOS COMPROVADOS</h3>
+                    <p class="text-gray-600">Aprovado por atletas profissionais e entusiastas do fitness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Highlight -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1075&q=80" 
+                         alt="WayFullPower Shake" 
+                         class="rounded-lg shadow-xl w-full max-w-md">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-6 text-gray-800">EXPERIMENTE O PODER DA PROTEÍNA PURA</h2>
+                    <p class="text-lg mb-6 text-gray-600">WayFullPower é formulado com proteína isolada de altíssima qualidade, proporcionando 25g de proteína por dose com apenas 120 calorias.</p>
+                    <ul class="mb-8 space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Aumento da massa muscular magra</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Recuperação muscular acelerada</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Saciedade prolongada</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Sem lactose e fácil digestão</span>
+                        </li>
+                    </ul>
+                    <button id="purchase" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                        QUERO MEU WAYFULLPOWER <i class="fas fa-shopping-cart ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">O QUE NOSSOS CLIENTES DIZEM</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"WayFullPower mudou completamente meus treinos. Minha recuperação melhorou muito e estou vendo resultados reais!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Carlos Silva</p>
+                            <p class="text-sm text-gray-500">Atleta amador</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"O sabor é incrível e não me dá problemas digestivos como outras proteínas que já usei. Recomendo demais!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Ana Paula</p>
+                            <p class="text-sm text-gray-500">Nutricionista esportiva</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Depois de testar várias marcas, finalmente encontrei uma proteína que realmente funciona. Meus músculos agradecem!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3"></div>
+                        <div>
+                            <p class="font-semibold">Ricardo Almeida</p>
+                            <p class="text-sm text-gray-500">Personal Trainer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">PRONTO PARA ELEVAR SEUS TREINOS?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Experimente WayFullPower hoje mesmo e sinta a diferença na sua performance e recuperação.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button id="purchase" class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold py-4 px-8 rounded-full text-lg transition duration-300">
+                    COMPRAR AGORA <i class="fas fa-bolt ml-2"></i>
+                </button>
+                <button class="bg-transparent hover:bg-blue-800 text-white font-semibold py-4 px-8 border border-white rounded-full text-lg transition duration-300">
+                    FALE CONOSCO
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">WAY<span class="text-yellow-300">FULL</span>POWER</h3>
+                    <p class="text-gray-400 mt-2">Energia. Performance. Resultados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 WayFullPower. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('purchase').addEventListener('click', function() {
+            alert('Obrigado pelo seu interesse no WayFullPower! Você será redirecionado para a página de checkout.');
+            // Aqui você pode adicionar o redirecionamento para a página de pagamento
+            // window.location.href = 'https://seusite.com/checkout';
+        });
+    </script>
+</body>
+</html>
